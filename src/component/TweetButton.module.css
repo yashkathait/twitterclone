@@ -1,0 +1,21 @@
+.tweet {
+  background-color: var(--twitter-color);
+  color: white;
+  border: none;
+  font-weight: 900;
+  height: 50px;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-transform: inherit;
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .tweet {
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .tweet {
+    display: none;
+  }
+}

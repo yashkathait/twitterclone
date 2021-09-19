@@ -1,0 +1,24 @@
+.navtab {
+  position: sticky;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  background-color: white;
+  padding-top: 20px;
+}
+.headings {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .navtab {
+    display: block;
+  }
+  .headings {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 4px;
+  }
+}

@@ -9,6 +9,7 @@ body {
   margin-right: 72px;
   padding: 0 10px;
 }
+
 @media (max-width: 600px) {
   .app {
     margin-left: 0;
@@ -20,6 +21,12 @@ body {
   .app {
     padding: 0;
     margin-left: 52px;
+  }
+}
+@media (orientation: landscape) and (max-width: 640px) {
+  .app {
+    margin-left: 16px;
+    margin-right: 0;
   }
 }
 @media (min-width: 1000px) and (max-width: 1300px) {

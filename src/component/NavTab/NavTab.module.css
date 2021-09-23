@@ -11,6 +11,19 @@
   justify-content: space-between;
   z-index: 100;
 }
+@media (orientation: landscape) and (max-width: 640px) {
+  .navtab {
+    display: block;
+  }
+  .headings {
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 
 @media (max-width: 600px) {
   .navtab {

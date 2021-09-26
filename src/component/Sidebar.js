@@ -12,6 +12,7 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import TweetButton from "./TweetButton";
+import MiniTweetButton from "./MiniTweet/MiniTweetButton";
 
 const Sidebar = () => {
   return (
@@ -26,6 +27,7 @@ const Sidebar = () => {
       <SiderbarOption text="Lists" Icon={ListAltIcon} />
       <SiderbarOption text="Profile" Icon={PermIdentityIcon} />
       <SiderbarOption text="More" Icon={MoreHorizIcon} />
+      <MiniTweetButton className={classes.minibutton} />
 
       <TweetButton>TWEET</TweetButton>
     </div>

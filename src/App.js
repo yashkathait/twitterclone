@@ -3,6 +3,7 @@ import Sidebar from "./component/Sidebar";
 import Main from "./component/Main";
 import "./App.css";
 import NavTab from "./component/NavTab/NavTab";
+import MiniTweet from "./component/MiniTweet/MiniTweet";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Sidebar />
         <Main />
         <Widgets />
+        <MiniTweet />
       </div>
 
       <NavTab />

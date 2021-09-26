@@ -28,9 +28,15 @@
   .h2 {
     display: none;
   }
+  .icon {
+    padding-bottom: 20px;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1300px) {
   .h2 {
     display: none;
+  }
+  .icon {
+    padding-bottom: 20px;
   }
 }

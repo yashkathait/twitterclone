@@ -1,1 +1,13 @@
-
+.minitweet {
+  display: none;
+}
+@media (max-width: 600px) {
+  .minitweet {
+    display: block;
+  }
+}
+@media (orientation: landscape) and (max-width: 640px) {
+  .minitweet {
+    display: block;
+  }
+}

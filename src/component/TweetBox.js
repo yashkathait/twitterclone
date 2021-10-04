@@ -1,21 +1,27 @@
 import { Avatar } from "@material-ui/core";
 import TweetButton from "./TweetButton";
-import classes from "./TweetBox.module.css";
+import "./TweetBox.scss";
 
 const TweetBox = () => {
   return (
-    <div className={classes.tweetbox}>
+    <div className={"tweetbox"}>
       <form>
-        <div className={classes.tweetbox_input}>
+        <div className={"tweetbox_input"}>
           <Avatar src="https://wallpapercave.com/wp/wp8190839.jpg" />
-          <input placeholder="What's happening" type="text"></input>
+          <input
+            className={"fnt-s"}
+            placeholder="What's happening"
+            type="text"
+          ></input>
         </div>
         <input
-          className={classes.tweetbox_inputurl}
+          className={"tweetbox_inputurl"}
           placeholder="Image URl"
           type="text"
         ></input>
-        <TweetButton className={classes.tweetbox_tweet}>TWEET</TweetButton>
+        <TweetButton className={"tweetbox_tweet" + " radius-m"}>
+          TWEET
+        </TweetButton>
       </form>
     </div>
   );

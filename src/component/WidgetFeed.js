@@ -1,4 +1,4 @@
-import classes from "./WidgetFeed.module.css";
+import "./WidgetFeed.scss";
 import data from "../data/widget.json";
 
 const WidgetFeed = () => {
@@ -6,13 +6,13 @@ const WidgetFeed = () => {
     <>
       {data.map((widget) => {
         return (
-          <div className={classes.WidgetFeed}>
-            <div className={classes.head}>
-              <div className={classes.headtext}>
+          <div className={"WidgetFeed"}>
+            <div className={"head"}>
+              <div className={"headtext"}>
                 <p>{widget.type}</p>
                 <h4>{widget.title}</h4>
               </div>
-              <img src={widget.imageURL} alt="" />
+              <img className={"radius-xxs"} src={widget.imageURL} alt="" />
             </div>
           </div>
         );

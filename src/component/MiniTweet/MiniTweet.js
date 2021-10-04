@@ -1,11 +1,11 @@
 import { Fab, Action } from "react-tiny-fab";
 import "react-tiny-fab/dist/styles.css";
 import { GiFeather } from "react-icons/gi";
-import classes from "./MiniTweet.module.css";
+import "./MiniTweet.scss";
 
 const MiniTweet = () => {
   return (
-    <div className={classes.minitweet}>
+    <div className={"minitweet"}>
       <Fab
         icon={<GiFeather />}
         event="false"

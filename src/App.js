@@ -1,6 +1,6 @@
-import Widgets from "./component/Widgets";
-import Sidebar from "./component/Sidebar";
-import Main from "./component/Main";
+import Widgets from "./component/Homepage/Widgets";
+import Sidebar from "./component/Homepage/Sidebar";
+import Main from "./component/Homepage/Main";
 import "./App.css";
 import NavTab from "./component/NavTab/NavTab";
 import MiniTweet from "./component/MiniTweet/MiniTweet";

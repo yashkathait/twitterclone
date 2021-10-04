@@ -21,9 +21,6 @@
   cursor: pointer;
 }
 
-.post_body > img {
-  border-radius: 20px;
-}
 .post_footer {
   display: flex;
   justify-content: space-between;
@@ -33,17 +30,15 @@
 .post_headerspecial {
   font-weight: 600;
   color: grey;
-  font-size: 14px;
+  // font-size: 14px;
   margin-top: 4px;
   margin-left: 4px;
 }
 .post_headerdescription {
   margin-bottom: 10px;
-  font-size: 15px;
+  // font-size: 14px;
 }
-.post_avatar {
-  padding: 20px;
-}
+
 .size {
   height: 48px;
   width: 48px;

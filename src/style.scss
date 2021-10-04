@@ -1,0 +1,22 @@
+@import "./variable.scss";
+
+//spacing
+@each $size, $value in $spacing {
+  .pdng-#{$size} {
+    padding: $value !important;
+  }
+}
+
+//font
+@each $size, $value in $font {
+  .fnt-#{$size} {
+    font-size: $value !important;
+  }
+}
+
+//Radius
+@each $size, $value in $radius {
+  .radius-#{$size} {
+    border-radius: $value !important;
+  }
+}

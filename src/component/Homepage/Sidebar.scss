@@ -8,13 +8,14 @@
   background-color: var(--twitter-color);
   border: none;
   color: white;
-  border-radius: 30px;
+  // border-radius: 30px;
   height: 48px;
   width: 48px;
 }
 
 .twittericon {
-  font-size: 30px;
+  // font-size: 30px;
+  // padding: 4px;
   margin-top: 20px;
   color: var(--twitter-color);
   margin-left: 8px;
@@ -23,7 +24,7 @@
 
 .twittericon:hover {
   background-color: #e8f5fe;
-  border-radius: 30px;
+  // border-radius: 20px; //later
 }
 @media (orientation: landscape) and (max-width: 640px) {
   .sidebar {

@@ -1,5 +1,5 @@
 import data from "../data/tweet.json";
-import classes from "./Post.module.css";
+import "./Post.scss";
 import { GoVerified } from "react-icons/go";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
@@ -9,28 +9,28 @@ import { Avatar } from "@material-ui/core";
 
 const Post = () => {
   return (
-    <div className={classes.postContainer}>
+    <div className={"postContainer"}>
       {data.map((tweet) => {
         return (
-          <div className={classes.post}>
-            <div className={classes.post_avatar}>
-              <Avatar className={classes.size} src={tweet.userProfile} />
+          <div className={"post"}>
+            <div className={"post_avatar" + " pdng-m"}>
+              <Avatar className={"size"} src={tweet.userProfile} />
             </div>
-            <div className={classes.post_body}>
-              <div className={classes.post_header}>
-                <div className={classes.post_headertext}>
+            <div className={"post_body"}>
+              <div className={"post_header"}>
+                <div className={"post_headertext"}>
                   <h3>{tweet.name}</h3>
-                  <GoVerified className={classes.post_badge} />
-                  <span className={classes.post_headerspecial}>
+                  <GoVerified className={"post_badge"} />
+                  <span className={"post_headerspecial" + " fnt-xs"}>
                     {tweet.username}
                   </span>
                 </div>
-                <div className={classes.post_headerdescription}>
+                <div className={"post_headerdescription" + " fnt-xs"}>
                   <p>{tweet.title}</p>
                 </div>
               </div>
-              <img src={tweet.imageURl} alt="" />
-              <div className={classes.post_footer}>
+              <img className={"radius-s"} src={tweet.imageURl} alt="" />
+              <div className={"post_footer"}>
                 <ChatBubbleOutlineIcon fontSize="small" />
                 <RepeatIcon fontSize="small" />
                 <PublishIcon fontSize="small" />

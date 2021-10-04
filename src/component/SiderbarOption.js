@@ -1,13 +1,15 @@
 import React from "react";
-import classes from "./SidebarOption.module.css";
+import "./SidebarOption.scss";
 
 export const SiderbarOption = ({ active, text, Icon }) => {
   return (
     <div
-      className={active ? classes.sidebarOption_active : classes.sidebarOption}
+      className={
+        active ? "sidebarOption_active" : "sidebarOption" + " radius-m"
+      }
     >
-      <Icon className={classes.icon} />
-      <h2 className={classes.h2}>{text}</h2>
+      <Icon className={"icon" + " pdng-s"} />
+      <h2 className={"h2" + " pdng-xxs"}>{text}</h2>
     </div>
   );
 };
